@@ -1,0 +1,41 @@
+[
+  {
+    "projectId": "dd4d8757-dc53-4ed8-a6b1-1b236a4cbe03",
+    "status": "draft",
+    "config": {
+      "shedSize": "10x16",
+      "useCase": "Office",
+      "style": "Modern",
+      "budget": "Basic"
+    },
+    "aiPlan": null,
+    "createdAt": "2026-03-26T16:28:20.027Z",
+    "updatedAt": "2026-03-26T16:28:20.027Z"
+  },
+  {
+    "projectId": "38833e5b-68cb-4300-8379-5e83b42237d3",
+    "status": "draft",
+    "config": {
+      "shedSize": "10x16",
+      "useCase": "Office",
+      "style": "Modern",
+      "budget": "Basic"
+    },
+    "aiPlan": null,
+    "createdAt": "2026-03-26T16:29:59.935Z",
+    "updatedAt": "2026-03-26T16:29:59.935Z"
+  },
+  {
+    "projectId": "fa467234-6b74-4dd9-b6e3-348db2141bd4",
+    "status": "draft",
+    "config": {
+      "shedSize": "10x16",
+      "useCase": "Office",
+      "style": "Modern",
+      "budget": "Basic"
+    },
+    "aiPlan": null,
+    "createdAt": "2026-03-26T16:48:03.197Z",
+    "updatedAt": "2026-03-26T16:48:03.197Z"
+  }
+]
