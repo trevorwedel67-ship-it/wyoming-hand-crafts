@@ -100,19 +100,19 @@ export default function WyomingFooter() {
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-amber-500 shrink-0" />
                 <a
-                  href="tel:+13075346506"
+                  href="tel:+13072727515"
                   className="text-sm text-stone-400 hover:text-amber-400 transition-colors"
                 >
-                  (307) 534-6506
+                  (307) 272-7515
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-amber-500 shrink-0" />
                 <a
-                  href="mailto:sanderssalesofwyo@gmail.com"
+                  href="mailto:trevorwedel67@gmail.com"
                   className="text-sm text-stone-400 hover:text-amber-400 transition-colors break-all"
                 >
-                  sanderssalesofwyo@gmail.com
+                  trevorwedel67@gmail.com
                 </a>
               </li>
             </ul>

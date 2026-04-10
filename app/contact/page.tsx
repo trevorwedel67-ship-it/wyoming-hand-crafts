@@ -64,10 +64,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-stone-800">Phone</p>
                     <a
-                      href="tel:+13075346506"
+                      href="tel:+13072727515"
                       className="text-sm text-amber-700 hover:underline mt-0.5 block"
                     >
-                      (307) 534-6506
+                      (307) 272-7515
                     </a>
                   </div>
                 </div>
@@ -79,10 +79,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-stone-800">Email</p>
                     <a
-                      href="mailto:sanderssalesofwyo@gmail.com"
+                      href="mailto:trevorwedel67@gmail.com"
                       className="text-sm text-amber-700 hover:underline mt-0.5 block break-all"
                     >
-                      sanderssalesofwyo@gmail.com
+                      trevorwedel67@gmail.com
                     </a>
                   </div>
                 </div>
