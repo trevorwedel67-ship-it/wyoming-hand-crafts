@@ -36,7 +36,7 @@ export default function WyomingNav() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-3"
+        scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-2" : "bg-white/30 backdrop-blur-sm py-3"
       }`}
     >
       {/* Main Header Bar */}
@@ -63,8 +63,8 @@ export default function WyomingNav() {
                 href={link.href}
                 className={`rounded-lg px-3 lg:px-4 py-2 text-xs lg:text-sm font-medium transition-colors ${
                   active
-                    ? scrolled ? "bg-amber-50 text-amber-800" : "bg-amber-100/20 text-stone-900"
-                    : scrolled ? "text-stone-600 hover:bg-amber-50 hover:text-amber-800" : "text-stone-900 hover:bg-white/10 hover:text-stone-800"
+                    ? "bg-amber-100 text-amber-800"
+                    : "text-stone-700 hover:bg-amber-50 hover:text-amber-800"
                 }`}
               >
                 {link.label}
@@ -73,12 +73,12 @@ export default function WyomingNav() {
           })}
         </div>
 
-        {/* Right Side Actions - Logo, Shop Now (desktop), Cart, Menu */}
-        <div className="flex items-center gap-1 sm:gap-2 ml-auto flex-shrink-0">
-          {/* Shop Now - Desktop only (hidden on mobile) */}
+        {/* Right Side Actions */}
+        <div className="flex items-center gap-2 ml-auto flex-shrink-0">
+          {/* Shop Now - Visible on all screens */}
           <Link
             href="/shop"
-            className="hidden sm:inline-flex rounded-full bg-amber-800 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-all hover:bg-amber-900 hover:shadow-lg whitespace-nowrap"
+            className="inline-flex rounded-full bg-amber-800 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-white transition-all hover:bg-amber-900 hover:shadow-lg whitespace-nowrap"
           >
             Shop Now
           </Link>
@@ -87,7 +87,7 @@ export default function WyomingNav() {
           <Link
             href="/cart"
             className={`relative flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg transition-colors flex-shrink-0 ${
-              scrolled ? 'text-stone-700 hover:bg-amber-50 hover:text-amber-800' : 'text-white hover:bg-white/10'
+              scrolled ? 'text-stone-800 hover:bg-amber-100 hover:text-amber-800' : 'text-stone-700 hover:bg-white/20 hover:text-amber-800'
             }`}
             aria-label="Shopping cart"
           >
@@ -103,8 +103,8 @@ export default function WyomingNav() {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg sm:hidden flex-shrink-0 ${
-              scrolled ? 'text-stone-700 hover:bg-amber-50' : 'text-white hover:bg-white/10'
+            className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg md:hidden flex-shrink-0 ${
+              scrolled ? 'text-stone-800 hover:bg-amber-100' : 'text-stone-700 hover:bg-white/20'
             }`}
             aria-label="Toggle menu"
           >
@@ -115,7 +115,7 @@ export default function WyomingNav() {
 
       {/* Mobile Menu Dropdown - Only on mobile */}
       {mobileOpen && (
-        <div className="bg-white border-t border-amber-100 sm:hidden max-h-[calc(100vh-56px)] overflow-y-auto">
+        <div className="bg-white border-t border-amber-100 md:hidden max-h-[calc(100vh-56px)] overflow-y-auto">
           <div className="mx-auto max-w-7xl px-3 py-3 flex flex-col gap-1">
             {links.map((link) => {
               const active =
@@ -126,7 +126,7 @@ export default function WyomingNav() {
                   href={link.href}
                   className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
                     active
-                      ? "bg-amber-50 text-amber-800"
+                      ? "bg-amber-100 text-amber-800"
                       : "text-stone-600 hover:bg-amber-50"
                   }`}
                 >
@@ -134,12 +134,6 @@ export default function WyomingNav() {
                 </Link>
               );
             })}
-            <Link
-              href="/shop"
-              className="mt-2 flex items-center justify-center rounded-full bg-amber-800 px-5 py-3 text-sm font-semibold text-white hover:bg-amber-900 transition-colors"
-            >
-              Shop Now
-            </Link>
             <Link
               href="/cart"
               className="mt-2 flex items-center justify-center gap-2 rounded-full bg-stone-700 px-5 py-3 text-sm font-semibold text-white hover:bg-stone-800 transition-colors"
