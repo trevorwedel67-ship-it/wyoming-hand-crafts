@@ -78,7 +78,7 @@ export default function WyomingNav() {
           {/* Shop Now - Desktop only (hidden on mobile) */}
           <Link
             href="/shop"
-            className="hidden sm:inline-flex rounded-full bg-amber-800 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-amber-900 whitespace-nowrap"
+            className="hidden sm:inline-flex rounded-full bg-amber-800 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-all hover:bg-amber-900 hover:shadow-lg whitespace-nowrap"
           >
             Shop Now
           </Link>
