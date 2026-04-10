@@ -78,7 +78,7 @@ export default function WyomingNav() {
           {/* Shop Now - Visible on all screens */}
           <Link
             href="/shop"
-            className="inline-flex rounded-full bg-amber-800 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-white transition-all hover:bg-amber-900 hover:shadow-lg whitespace-nowrap"
+            className="inline-flex rounded-full bg-green-800 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-white transition-all hover:bg-green-900 hover:shadow-lg whitespace-nowrap border-2 border-green-900 shadow-md"
           >
             Shop Now
           </Link>
@@ -87,7 +87,7 @@ export default function WyomingNav() {
           <Link
             href="/cart"
             className={`relative flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg transition-colors flex-shrink-0 ${
-              scrolled ? 'text-stone-800 hover:bg-amber-100 hover:text-amber-800' : 'text-stone-700 hover:bg-white/20 hover:text-amber-800'
+              scrolled ? 'text-black hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-white/30 hover:text-black'
             }`}
             aria-label="Shopping cart"
           >
@@ -104,7 +104,7 @@ export default function WyomingNav() {
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg md:hidden flex-shrink-0 ${
-              scrolled ? 'text-stone-800 hover:bg-amber-100' : 'text-stone-700 hover:bg-white/20'
+              scrolled ? 'text-black hover:bg-gray-200' : 'text-black hover:bg-white/30'
             }`}
             aria-label="Toggle menu"
           >
