@@ -47,7 +47,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?w=1400&q=80"
-            alt="Wyoming Mountains"
+            alt="Woodworking Workshop"
             className="w-full h-full object-cover opacity-25"
           />
         </div>
@@ -106,14 +106,14 @@ export default function AboutPage() {
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?w=800&q=80"
-                  alt="Artisan at work"
+                  alt="Woodworking shop with tools and wood"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 w-40 h-40 rounded-2xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
                 <img
                   src="https://images.pexels.com/photos/3962287/pexels-photo-3962287.jpeg?w=400&q=80"
-                  alt="Handmade quilt"
+                  alt="Handcrafted wooden piece"
                   className="w-full h-full object-cover"
                 />
               </div>
