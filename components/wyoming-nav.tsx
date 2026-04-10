@@ -91,7 +91,7 @@ export default function WyomingNav() {
 
           <Link
             href="/shop"
-            className="rounded-full bg-amber-800 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-amber-900 inline-flex"
+            className="hidden sm:inline-flex rounded-full bg-amber-800 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-amber-900"
           >
             Shop Now
           </Link>
@@ -131,8 +131,14 @@ export default function WyomingNav() {
               );
             })}
             <Link
+              href="/shop"
+              className="mt-3 flex items-center justify-center rounded-full bg-amber-800 px-5 py-3 text-sm font-semibold text-white"
+            >
+              Shop Now
+            </Link>
+            <Link
               href="/cart"
-              className="mt-2 flex items-center justify-center gap-2 rounded-full bg-amber-800 px-5 py-3 text-sm font-semibold text-white"
+              className="mt-2 flex items-center justify-center gap-2 rounded-full bg-stone-700 px-5 py-3 text-sm font-semibold text-white"
             >
               <ShoppingCart className="w-4 h-4" />
               Cart {itemCount > 0 && `(${itemCount})`}
