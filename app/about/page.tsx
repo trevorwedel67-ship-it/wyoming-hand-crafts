@@ -35,7 +35,7 @@ const team = [
     name: "The Sanders Family",
     role: "Founders & Artisans",
     bio: "Wyoming Hand Crafts was started by the Sanders family right here in Lagrange, Wyoming. With roots deep in the Cowboy State, they bring authentic Western craftsmanship to every piece they create.",
-    image: "https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?w=600&q=80",
+    image: "https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?w=600&q=80",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
       <div className="relative overflow-hidden bg-stone-900 py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80"
+            src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?w=1400&q=80"
             alt="Wyoming Mountains"
             className="w-full h-full object-cover opacity-25"
           />
@@ -105,14 +105,14 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80"
+                  src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?w=800&q=80"
                   alt="Artisan at work"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 w-40 h-40 rounded-2xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
                 <img
-                  src="https://images.unsplash.com/photo-1544956291-f1fc9394cca7?w=400&q=80"
+                  src="https://images.pexels.com/photos/3962287/pexels-photo-3962287.jpeg?w=400&q=80"
                   alt="Handmade quilt"
                   className="w-full h-full object-cover"
                 />
