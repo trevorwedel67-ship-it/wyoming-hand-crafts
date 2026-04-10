@@ -39,9 +39,9 @@ export default function WyomingNav() {
         scrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
           <Image
             src="/logo.png"
             alt="Wyoming Hand Crafts Logo"
@@ -51,7 +51,7 @@ export default function WyomingNav() {
           />
         </Link>
 
-        {/* Desktop links */}
+        {/* Desktop links - hidden on mobile */}
         <div className="hidden items-center gap-1 md:flex">
           {links.map((link) => {
             const active =
@@ -72,11 +72,20 @@ export default function WyomingNav() {
           })}
         </div>
 
-        {/* Cart + mobile toggle */}
-        <div className="flex items-center gap-3">
+        {/* Right side: Shop Now (desktop only), Cart, and Menu */}
+        <div className="flex items-center gap-2 ml-auto">
+          {/* Shop Now - Desktop only */}
+          <Link
+            href="/shop"
+            className="hidden sm:inline-flex rounded-full bg-amber-800 px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-amber-900 flex-shrink-0"
+          >
+            Shop Now
+          </Link>
+
+          {/* Cart icon - Always visible */}
           <Link
             href="/cart"
-            className={`relative flex h-10 w-10 items-center justify-center rounded-lg transition-colors ${
+            className={`relative flex h-10 w-10 items-center justify-center rounded-lg transition-colors flex-shrink-0 ${
               scrolled ? 'text-stone-700 hover:bg-amber-50 hover:text-amber-800' : 'text-white hover:bg-white/10'
             }`}
             aria-label="Shopping cart"
@@ -89,17 +98,11 @@ export default function WyomingNav() {
             )}
           </Link>
 
-          <Link
-            href="/shop"
-            className="hidden sm:inline-flex rounded-full bg-amber-800 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-amber-900"
-          >
-            Shop Now
-          </Link>
-
+          {/* Hamburger Menu - Mobile only */}
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`flex h-10 w-10 items-center justify-center rounded-lg md:hidden ${
+            className={`flex h-10 w-10 items-center justify-center rounded-lg sm:hidden flex-shrink-0 ${
               scrolled ? 'text-stone-700 hover:bg-amber-50' : 'text-white hover:bg-white/10'
             }`}
             aria-label="Toggle menu"
@@ -109,9 +112,9 @@ export default function WyomingNav() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - Only on mobile */}
       {mobileOpen && (
-        <div className="bg-white mt-2 mx-4 rounded-2xl p-4 shadow-lg md:hidden animate-scale-in border border-amber-100">
+        <div className="bg-white mt-2 mx-4 rounded-2xl p-4 shadow-lg sm:hidden animate-scale-in border border-amber-100">
           <div className="flex flex-col gap-1">
             {links.map((link) => {
               const active =
